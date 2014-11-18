@@ -15,6 +15,7 @@ public class FlatColorUI : EditorWindow {
     private Color Red = new Color(1, 0, 0);
     private Color ThunderBird = new Color(0.85f, 0.117f, 0.09f);
     private Color OldBrick = new Color(0.588f, 0.156f, 0.10f);
+    private Color Flamingo = new Color(0.937f, 0.282f, 0.211f);
     #endregion
 
 
@@ -106,6 +107,18 @@ public class FlatColorUI : EditorWindow {
             if (GUILayout.Button("Create OldBrick"))
             {
                 CreateMaterial(OldBrick, "OldBrick");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Flamingo
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Flamingo = EditorGUILayout.ColorField("Flamingo:", Flamingo);
+            if (GUILayout.Button("Create Flamingo"))
+            {
+                CreateMaterial(Flamingo, "Flamingo");
             }
             GUILayout.EndHorizontal();
             GUILayout.Space(5);
