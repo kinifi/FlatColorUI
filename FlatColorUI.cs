@@ -18,6 +18,8 @@ public class FlatColorUI : EditorWindow
     public bool showOptions = false;
     #endregion
 
+    private Vector2 scrollPos;
+
     //Colors
     #region Reds
     private Color ChestNutRose = new Color(0.823f, 0.301f, 0.341f);
@@ -84,6 +86,7 @@ public class FlatColorUI : EditorWindow
         GUILayout.Space(10);
         GUILayout.Label("Flat Color UI: Created by @kinifi");
 
+        scrollPos = EditorGUILayout.BeginScrollView(scrollPos);
 
         #region Red Colors
         showReds = EditorGUILayout.Foldout(showReds, "Reds");
@@ -479,6 +482,8 @@ public class FlatColorUI : EditorWindow
         }
         #endregion
 
+
+        EditorGUILayout.EndScrollView();
     }
 
 }
