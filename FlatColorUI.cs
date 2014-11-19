@@ -59,6 +59,59 @@ public class FlatColorUI : EditorWindow
     private Color Wisteria = new Color(0.607f, 0.349f, 0.713f);
     #endregion
 
+    #region Blue
+    private Color SanMarino = new Color(0.266f, 0.423f, 0.701f);
+    private Color AliceBlue = new Color(0.894f, 0.945f, 0.996f);
+    private Color RoyalBlue = new Color(0.254f, 0.513f, 0.843f);
+    private Color PictonBlue = new Color(0.349f, 0.670f, 0.890f);
+    private Color Spray = new Color(0.505f, 0.811f, 0.878f);
+    private Color Shakespeare = new Color(0.321f, 0.701f, 0.850f);
+    private Color HummingBird = new Color(0.772f, 0.937f, 0.968f);
+    private Color PictonBlueTwo = new Color(0.203f, 0.596f, 0.858f);
+    private Color Madison = new Color(0.172f, 0.243f, 0.313f);
+    private Color DodgerBlue = new Color(0.098f, 0.709f, 0.996f);
+    private Color Ming = new Color(0.2f, 0.431f, 0.482f);
+    private Color EbonyClay = new Color(0.133f, 0.192f, 0.247f);
+    private Color Malibu = new Color(0.419f, 0.725f, 0.941f);
+    private Color CuriousBlue = new Color(0.117f, 0.545f, 0.764f);
+    private Color Chambray = new Color(0.227f, 0.325f, 0.607f);
+    private Color PickledBlueWood = new Color(0.203f, 0.286f, 0.368f);
+    private Color Hoki = new Color(0.403f, 0.501f, 0.623f);
+    private Color JellyBean = new Color(0.145f, 0.454f, 0.662f);
+    private Color JacksonsPurple = new Color(0.121f, 0.227f, 0.576f);
+    private Color JordyBlue = new Color(0.537f, 0.768f, 0.956f);
+    private Color SteelBlue = new Color(0.294f, 0.466f, 0.745f);
+    private Color FoundtainBlue = new Color(0.360f, 0.592f, 0.749f);
+    #endregion
+
+    #region Green
+    private Color MediumTurquoise = new Color();
+    private Color AquaIsland = new Color();
+    private Color Gossip = new Color();
+    private Color DarkSeaGreen = new Color();
+    private Color Eucalyptus = new Color();
+    private Color CaribbeanGreen = new Color();
+    private Color SilverTree = new Color();
+    private Color Downy = new Color();
+    private Color MountainMeadow = new Color();
+    private Color LightSeaGreen = new Color();
+    private Color MediumAquaMarine = new Color();
+    private Color Turquoise = new Color();
+    private Color Madang = new Color();
+    private Color Riptide = new Color();
+    private Color Shamrock = new Color();
+    private Color MountainMeadowTwo = new Color();
+    private Color Emerald = new Color();
+    private Color GreenHaze = new Color();
+    private Color FreeSpeechAquaMarine = new Color();
+    private Color OceanGreen = new Color();
+    private Color Niagara = new Color();
+    private Color Jade = new Color();
+    private Color Salem = new Color();
+    private Color Observatory = new Color();
+    private Color JungleGreen = new Color();
+    #endregion
+
     #region Yellow
     private Color CreamCan = new Color(0.960f, 0.843f, 0.431f);
     private Color RipeLemon = new Color(0.968f, 0.792f, 0.094f);
@@ -455,6 +508,209 @@ public class FlatColorUI : EditorWindow
         showBlue = EditorGUILayout.Foldout(showBlue, "Blue");
         if (showBlue)
         {
+            #region SanMarino
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            SanMarino = EditorGUILayout.ColorField("SanMarino:", SanMarino);
+            if (GUILayout.Button("Create SanMarino"))
+            {
+                CreateMaterial(SanMarino, "SanMarino");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region AliceBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            AliceBlue = EditorGUILayout.ColorField("AliceBlue:", AliceBlue);
+            if (GUILayout.Button("Create AliceBlue"))
+            {
+                CreateMaterial(AliceBlue, "AliceBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region RoyalBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            RoyalBlue = EditorGUILayout.ColorField("RoyalBlue:", RoyalBlue);
+            if (GUILayout.Button("Create RoyalBlue"))
+            {
+                CreateMaterial(RoyalBlue, "RoyalBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region PictonBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            PictonBlue = EditorGUILayout.ColorField("PictonBlue:", PictonBlue);
+            if (GUILayout.Button("Create PictonBlue"))
+            {
+                CreateMaterial(PictonBlue, "PictonBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Spray
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Spray = EditorGUILayout.ColorField("Spray:", Spray);
+            if (GUILayout.Button("Create Spray"))
+            {
+                CreateMaterial(Spray, "Spray");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Shakespeare
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Shakespeare = EditorGUILayout.ColorField("Shakespeare:", Shakespeare);
+            if (GUILayout.Button("Create Shakespeare"))
+            {
+                CreateMaterial(Shakespeare, "Shakespeare");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region HummingBird
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            HummingBird = EditorGUILayout.ColorField("HummingBird:", HummingBird);
+            if (GUILayout.Button("Create HummingBird"))
+            {
+                CreateMaterial(HummingBird, "HummingBird");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region PictonBlueTwo
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            PictonBlueTwo = EditorGUILayout.ColorField("PictonBlueTwo:", PictonBlueTwo);
+            if (GUILayout.Button("Create PictonBlueTwo"))
+            {
+                CreateMaterial(PictonBlueTwo, "PictonBlueTwo");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region CuriousBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            CuriousBlue = EditorGUILayout.ColorField("CuriousBlue:", CuriousBlue);
+            if (GUILayout.Button("Create CuriousBlue"))
+            {
+                CreateMaterial(CuriousBlue, "CuriousBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Chambray
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Chambray = EditorGUILayout.ColorField("Chambray:", Chambray);
+            if (GUILayout.Button("Create Chambray"))
+            {
+                CreateMaterial(Chambray, "Chambray");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region PickledBlueWood
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            PickledBlueWood = EditorGUILayout.ColorField("PickledBlueWood:", PickledBlueWood);
+            if (GUILayout.Button("Create PickledBlueWood"))
+            {
+                CreateMaterial(PickledBlueWood, "PickledBlueWood");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Hoki
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Hoki = EditorGUILayout.ColorField("Hoki:", Hoki);
+            if (GUILayout.Button("Create Hoki"))
+            {
+                CreateMaterial(Hoki, "Hoki");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region JellyBean
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            JellyBean = EditorGUILayout.ColorField("JellyBean:", JellyBean);
+            if (GUILayout.Button("Create JellyBean"))
+            {
+                CreateMaterial(JellyBean, "JellyBean");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region JacksonsPurple
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            JacksonsPurple = EditorGUILayout.ColorField("JacksonsPurple:", JacksonsPurple);
+            if (GUILayout.Button("Create JacksonsPurple"))
+            {
+                CreateMaterial(JacksonsPurple, "JacksonsPurple");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region JordyBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            JordyBlue = EditorGUILayout.ColorField("JordyBlue:", JordyBlue);
+            if (GUILayout.Button("Create JordyBlue"))
+            {
+                CreateMaterial(JordyBlue, "JordyBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region SteelBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            SteelBlue = EditorGUILayout.ColorField("SteelBlue:", SteelBlue);
+            if (GUILayout.Button("Create SteelBlue"))
+            {
+                CreateMaterial(SteelBlue, "SteelBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region FoundtainBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            FoundtainBlue = EditorGUILayout.ColorField("FoundtainBlue:", FoundtainBlue);
+            if (GUILayout.Button("Create FoundtainBlue"))
+            {
+                CreateMaterial(FoundtainBlue, "FoundtainBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
 
         }
         #endregion
