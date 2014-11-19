@@ -7,6 +7,12 @@ public class FlatColorUI : EditorWindow {
 
     public bool showReds = false;
     public bool showPinks = false;
+    public bool showPurple = false;
+    public bool showBlue = false;
+    public bool showGreen = false;
+    public bool showYellow = false;
+    public bool showOrange = false;
+    public bool showGray = false;
     public bool showOptions = false;
 
     //Colors
@@ -187,6 +193,54 @@ public class FlatColorUI : EditorWindow {
             GUILayout.EndHorizontal();
             GUILayout.Space(5);
             #endregion
+        }
+        #endregion
+
+        #region Purple Colors
+        showPurple = EditorGUILayout.Foldout(showPurple, "Purples");
+        if (showPurple)
+        {
+
+        }
+        #endregion
+
+        #region Blue Colors
+        showBlue = EditorGUILayout.Foldout(showBlue, "Blue");
+        if (showBlue)
+        {
+
+        }
+        #endregion
+
+        #region Green Colors
+        showGreen = EditorGUILayout.Foldout(showGreen, "Green");
+        if (showGreen)
+        {
+
+        }
+        #endregion
+
+        #region Yellow Colors
+        showYellow = EditorGUILayout.Foldout(showYellow, "Yellows");
+        if (showYellow)
+        {
+
+        }
+        #endregion
+
+        #region Orange Colors
+        showOrange = EditorGUILayout.Foldout(showOrange, "Orange");
+        if (showOrange)
+        {
+
+        }
+        #endregion
+
+        #region Gray Colors
+        showGray = EditorGUILayout.Foldout(showGray, "Grays");
+        if (showGray)
+        {
+
         }
         #endregion
 
