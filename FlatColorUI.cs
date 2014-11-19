@@ -6,6 +6,7 @@ using System.Collections;
 public class FlatColorUI : EditorWindow {
 
     public bool showReds = false;
+    public bool showPinks = false;
     public bool showOptions = false;
 
     //Colors
@@ -16,6 +17,14 @@ public class FlatColorUI : EditorWindow {
     private Color ThunderBird = new Color(0.85f, 0.117f, 0.09f);
     private Color OldBrick = new Color(0.588f, 0.156f, 0.10f);
     private Color Flamingo = new Color(0.937f, 0.282f, 0.211f);
+    //TODO: Check if Tall Poppy is correct. 
+    private Color TallPoppy = new Color(0.752f, 0.22f, 0.168f);
+    private Color Monza = new Color(0.811f, 0, 0.058f);
+    private Color Cinnabar = new Color(0.905f, 0.298f, 0.235f);
+    #endregion
+
+    #region Pinks
+    private Color Razzmatazz = new Color(0.858f, 0.0392f, 0.356f);
     #endregion
 
 
@@ -124,6 +133,60 @@ public class FlatColorUI : EditorWindow {
             GUILayout.Space(5);
             #endregion
 
+            #region TallPoppy
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            TallPoppy = EditorGUILayout.ColorField("TallPoppy:", TallPoppy);
+            if (GUILayout.Button("Create TallPoppy"))
+            {
+                CreateMaterial(TallPoppy, "TallPoppy");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Monza
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Monza = EditorGUILayout.ColorField("Monza:", Monza);
+            if (GUILayout.Button("Create Monza"))
+            {
+                CreateMaterial(Monza, "Monza");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Cinnabar
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Cinnabar = EditorGUILayout.ColorField("Cinnabar:", Cinnabar);
+            if (GUILayout.Button("Create Cinnabar"))
+            {
+                CreateMaterial(Cinnabar, "Cinnabar");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+        }
+        #endregion
+
+        #region Pinks Colors
+        showPinks = EditorGUILayout.Foldout(showPinks, "Pinks");
+        if (showPinks)
+        {
+            #region Razzmatazz
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Razzmatazz = EditorGUILayout.ColorField("Razzmatazz:", Razzmatazz);
+            if (GUILayout.Button("Create Razzmatazz"))
+            {
+                CreateMaterial(Razzmatazz, "Razzmatazz");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
         }
         #endregion
 
