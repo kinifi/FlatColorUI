@@ -18,6 +18,7 @@ public class FlatColorUI : EditorWindow
     public bool showOptions = false;
     #endregion
 
+    //the scroll position stored in a Vector2
     private Vector2 scrollPos;
 
     //Colors
@@ -58,6 +59,12 @@ public class FlatColorUI : EditorWindow
     private Color Wisteria = new Color(0.607f, 0.349f, 0.713f);
     #endregion
 
+    #region Yellow
+    private Color CreamCan = new Color(0.960f, 0.843f, 0.431f);
+    private Color RipeLemon = new Color(0.968f, 0.792f, 0.094f);
+    private Color Saffron = new Color(0.956f, 0.815f, 0.247f);
+    #endregion
+
     [MenuItem("Window/FlatColorUI")]
     public static void ShowWindow()
     {
@@ -72,6 +79,12 @@ public class FlatColorUI : EditorWindow
 
     }
 
+    /// Create Material
+    /// <summary>
+    /// Create a material in the Assets Folder
+    /// </summary>
+    /// <param name="newColor"></param>
+    /// <param name="materialName"></param>
     void CreateMaterial(Color newColor, string materialName)
     {
         var newMaterial = new Material(Shader.Find("Diffuse"));
@@ -460,7 +473,41 @@ public class FlatColorUI : EditorWindow
         showYellow = EditorGUILayout.Foldout(showYellow, "Yellows");
         if (showYellow)
         {
+            #region CreamCan
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            CreamCan = EditorGUILayout.ColorField("CreamCan:", CreamCan);
+            if (GUILayout.Button("Create CreamCan"))
+            {
+                CreateMaterial(CreamCan, "CreamCan");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
 
+            #region RipeLemon
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            RipeLemon = EditorGUILayout.ColorField("RipeLemon:", RipeLemon);
+            if (GUILayout.Button("Create RipeLemon"))
+            {
+                CreateMaterial(RipeLemon, "RipeLemon");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Saffron
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Saffron = EditorGUILayout.ColorField("Saffron:", Saffron);
+            if (GUILayout.Button("Create Saffron"))
+            {
+                CreateMaterial(CreamCan, "Saffron");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
         }
         #endregion
 
