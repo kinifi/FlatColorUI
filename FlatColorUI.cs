@@ -85,31 +85,31 @@ public class FlatColorUI : EditorWindow
     #endregion
 
     #region Green
-    private Color MediumTurquoise = new Color();
-    private Color AquaIsland = new Color();
-    private Color Gossip = new Color();
-    private Color DarkSeaGreen = new Color();
-    private Color Eucalyptus = new Color();
-    private Color CaribbeanGreen = new Color();
-    private Color SilverTree = new Color();
-    private Color Downy = new Color();
-    private Color MountainMeadow = new Color();
-    private Color LightSeaGreen = new Color();
-    private Color MediumAquaMarine = new Color();
-    private Color Turquoise = new Color();
-    private Color Madang = new Color();
-    private Color Riptide = new Color();
-    private Color Shamrock = new Color();
-    private Color MountainMeadowTwo = new Color();
-    private Color Emerald = new Color();
-    private Color GreenHaze = new Color();
-    private Color FreeSpeechAquaMarine = new Color();
-    private Color OceanGreen = new Color();
-    private Color Niagara = new Color();
-    private Color Jade = new Color();
-    private Color Salem = new Color();
-    private Color Observatory = new Color();
-    private Color JungleGreen = new Color();
+    private Color MediumTurquoise = new Color(0.305f, 0.803f, 0.768f);
+    private Color AquaIsland = new Color(0.635f, 0.870f, 0.815f);
+    private Color Gossip = new Color(0.529f, 0.827f, 0.486f);
+    private Color DarkSeaGreen = new Color(0.564f, 0.776f, 0.584f);
+    private Color Eucalyptus = new Color(0.149f, 0.650f, 0.356f);
+    private Color CaribbeanGreen = new Color(0.011f, 0.650f, 0.356f);
+    private Color SilverTree = new Color(0.407f, 0.764f, 0.639f);
+    private Color Downy = new Color(0.396f, 0.776f, 0.733f);
+    private Color MountainMeadow = new Color(0.105f, 0.737f, 0.607f);
+    private Color LightSeaGreen = new Color(0.105f, 0.639f, 0.611f);
+    private Color MediumAquaMarine = new Color(0.4f, 0.8f, 0.6f);
+    private Color Turquoise = new Color(0.211f, 0.843f, 0.717f);
+    private Color Madang = new Color(0.784f, 0.968f, 0.772f);
+    private Color Riptide = new Color(0.525f, 0.886f, 0.835f);
+    private Color Shamrock = new Color(0.180f, 0.8f, 0.443f);
+    private Color MountainMeadowTwo = new Color(0.086f, 0.627f, 0.521f);
+    private Color Emerald = new Color(0.247f, 0.764f, 0.501f);
+    private Color GreenHaze = new Color(0.003f, 0.596f, 0.458f);
+    private Color FreeSpeechAquaMarine = new Color(0.011f, 0.650f, 0.470f);
+    private Color OceanGreen = new Color(0.301f, 0.686f, 0.486f);
+    private Color Niagara = new Color(0.164f, 0.733f, 0.607f);
+    private Color Jade = new Color(0, 0.694f, 0.415f);
+    private Color Salem = new Color(0.117f, 0.509f, 0.298f);
+    private Color Observatory = new Color(0.015f, 0.576f, 0.447f);
+    private Color JungleGreen = new Color(0.149f, 0.760f, 0.505f);
     #endregion
 
     #region Yellow
@@ -604,6 +604,66 @@ public class FlatColorUI : EditorWindow
             GUILayout.Space(5);
             #endregion
 
+            #region Madison
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Madison = EditorGUILayout.ColorField("Madison:", Madison);
+            if (GUILayout.Button("Create Madison"))
+            {
+                CreateMaterial(Madison, "Madison");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region DodgerBlue
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            DodgerBlue = EditorGUILayout.ColorField("DodgerBlue:", DodgerBlue);
+            if (GUILayout.Button("Create DodgerBlue"))
+            {
+                CreateMaterial(DodgerBlue, "DodgerBlue");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Ming
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Ming = EditorGUILayout.ColorField("Ming:", Ming);
+            if (GUILayout.Button("Create Ming"))
+            {
+                CreateMaterial(Ming, "Ming");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region EbonyClay
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            EbonyClay = EditorGUILayout.ColorField("EbonyClay:", EbonyClay);
+            if (GUILayout.Button("Create EbonyClay"))
+            {
+                CreateMaterial(EbonyClay, "EbonyClay");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Malibu
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Malibu = EditorGUILayout.ColorField("Malibu:", Malibu);
+            if (GUILayout.Button("Create Malibu"))
+            {
+                CreateMaterial(Malibu, "Malibu");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
             #region CuriousBlue
             EditorGUI.indentLevel = 1;
             GUILayout.BeginHorizontal();
@@ -720,7 +780,305 @@ public class FlatColorUI : EditorWindow
         showGreen = EditorGUILayout.Foldout(showGreen, "Green");
         if (showGreen)
         {
+            #region MediumTurquoise
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            MediumTurquoise = EditorGUILayout.ColorField("MediumTurquoise:", MediumTurquoise);
+            if (GUILayout.Button("Create MediumTurquoise"))
+            {
+                CreateMaterial(MediumTurquoise, "MediumTurquoise");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
 
+            #region AquaIsland
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            AquaIsland = EditorGUILayout.ColorField("AquaIsland:", AquaIsland);
+            if (GUILayout.Button("Create AquaIsland"))
+            {
+                CreateMaterial(AquaIsland, "AquaIsland");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Gossip
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Gossip = EditorGUILayout.ColorField("Gossip:", Gossip);
+            if (GUILayout.Button("Create Gossip"))
+            {
+                CreateMaterial(Gossip, "Gossip");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region DarkSeaGreen
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            DarkSeaGreen = EditorGUILayout.ColorField("DarkSeaGreen:", DarkSeaGreen);
+            if (GUILayout.Button("Create DarkSeaGreen"))
+            {
+                CreateMaterial(DarkSeaGreen, "DarkSeaGreen");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Eucalyptus
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Eucalyptus = EditorGUILayout.ColorField("Eucalyptus:", Eucalyptus);
+            if (GUILayout.Button("Create Eucalyptus"))
+            {
+                CreateMaterial(Eucalyptus, "Eucalyptus");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region CaribbeanGreen
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            CaribbeanGreen = EditorGUILayout.ColorField("CaribbeanGreen:", CaribbeanGreen);
+            if (GUILayout.Button("Create CaribbeanGreen"))
+            {
+                CreateMaterial(CaribbeanGreen, "CaribbeanGreen");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region SilverTree
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            SilverTree = EditorGUILayout.ColorField("SilverTree:", SilverTree);
+            if (GUILayout.Button("Create SilverTree"))
+            {
+                CreateMaterial(SilverTree, "SilverTree");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Downy
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Downy = EditorGUILayout.ColorField("Downy:", Downy);
+            if (GUILayout.Button("Create Downy"))
+            {
+                CreateMaterial(Downy, "Downy");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region MountainMeadow
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            MountainMeadow = EditorGUILayout.ColorField("MountainMeadow:", MountainMeadow);
+            if (GUILayout.Button("Create MountainMeadow"))
+            {
+                CreateMaterial(MountainMeadow, "MountainMeadow");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region LightSeaGreen
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            LightSeaGreen = EditorGUILayout.ColorField("LightSeaGreen:", LightSeaGreen);
+            if (GUILayout.Button("Create LightSeaGreen"))
+            {
+                CreateMaterial(LightSeaGreen, "LightSeaGreen");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region MediumAquaMarine
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            MediumAquaMarine = EditorGUILayout.ColorField("MediumAquaMarine:", MediumAquaMarine);
+            if (GUILayout.Button("Create MediumAquaMarine"))
+            {
+                CreateMaterial(MediumAquaMarine, "MediumAquaMarine");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Turquoise
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Turquoise = EditorGUILayout.ColorField("Turquoise:", Turquoise);
+            if (GUILayout.Button("Create Turquoise"))
+            {
+                CreateMaterial(Turquoise, "Turquoise");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Madang
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Madang = EditorGUILayout.ColorField("Madang:", Madang);
+            if (GUILayout.Button("Create Madang"))
+            {
+                CreateMaterial(Madang, "Madang");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Riptide
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Riptide = EditorGUILayout.ColorField("Riptide:", Riptide);
+            if (GUILayout.Button("Create Riptide"))
+            {
+                CreateMaterial(Riptide, "Riptide");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Shamrock
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Shamrock = EditorGUILayout.ColorField("Shamrock:", Shamrock);
+            if (GUILayout.Button("Create Shamrock"))
+            {
+                CreateMaterial(Shamrock, "Shamrock");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region MountainMeadowTwo
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            MountainMeadowTwo = EditorGUILayout.ColorField("MountainMeadowTwo:", MountainMeadowTwo);
+            if (GUILayout.Button("Create MountainMeadowTwo"))
+            {
+                CreateMaterial(MountainMeadowTwo, "MountainMeadowTwo");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Emerald
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Emerald = EditorGUILayout.ColorField("Emerald:", Emerald);
+            if (GUILayout.Button("Create Emerald"))
+            {
+                CreateMaterial(Emerald, "Emerald");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region GreenHaze
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            GreenHaze = EditorGUILayout.ColorField("GreenHaze:", GreenHaze);
+            if (GUILayout.Button("Create GreenHaze"))
+            {
+                CreateMaterial(GreenHaze, "GreenHaze");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region FreeSpeechAquaMarine
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            FreeSpeechAquaMarine = EditorGUILayout.ColorField("FreeSpeechAquaMarine:", FreeSpeechAquaMarine);
+            if (GUILayout.Button("Create FreeSpeechAquaMarine"))
+            {
+                CreateMaterial(FreeSpeechAquaMarine, "FreeSpeechAquaMarine");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region OceanGreen
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            OceanGreen = EditorGUILayout.ColorField("OceanGreen:", OceanGreen);
+            if (GUILayout.Button("Create OceanGreen"))
+            {
+                CreateMaterial(OceanGreen, "OceanGreen");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Niagara
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Niagara = EditorGUILayout.ColorField("Niagara:", Niagara);
+            if (GUILayout.Button("Create Niagara"))
+            {
+                CreateMaterial(Niagara, "Niagara");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Jade
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Jade = EditorGUILayout.ColorField("Jade:", Jade);
+            if (GUILayout.Button("Create Jade"))
+            {
+                CreateMaterial(Jade, "Jade");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Salem
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Salem = EditorGUILayout.ColorField("Salem:", Salem);
+            if (GUILayout.Button("Create Salem"))
+            {
+                CreateMaterial(Salem, "Salem");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region Observatory
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            Observatory = EditorGUILayout.ColorField("Observatory:", Observatory);
+            if (GUILayout.Button("Create Observatory"))
+            {
+                CreateMaterial(Observatory, "Observatory");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
+
+            #region JungleGreen
+            EditorGUI.indentLevel = 1;
+            GUILayout.BeginHorizontal();
+            JungleGreen = EditorGUILayout.ColorField("JungleGreen:", JungleGreen);
+            if (GUILayout.Button("Create JungleGreen"))
+            {
+                CreateMaterial(JungleGreen, "JungleGreen");
+            }
+            GUILayout.EndHorizontal();
+            GUILayout.Space(5);
+            #endregion
         }
         #endregion
 
