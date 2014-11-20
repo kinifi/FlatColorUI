@@ -1,9 +1,9 @@
 # FlatColorUI
 
-Flat Colors to Choose and export to a Material. Directly in the Unity 3D editor
-![alt text](http://i.imgur.com/J46xN1R.gif "Save Colors to Material")
+FlatColorUI is a Library of Flat Colors for Unity3D. 
 
-![alt text](http://i.imgur.com/xyg65aN.png "Save Colors to Material")
+Flat Colors to Choose and export to a Material. Directly in the Unity 3D editor
+![alt text](http://i.imgur.com/FORhSPh.gif "Save Colors to Material")
 
 Create A Material from Flat Color UI Selection
 ![alt text](http://i.imgur.com/w3s6BaP.gif "Save Colors to Material")
