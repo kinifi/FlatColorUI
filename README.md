@@ -8,6 +8,12 @@ FlatColorUI is a Library of Flat Colors for Unity3D.
 2. Place FlatColorUI.cs in the newly created Editor Folder
 3. Window -> FlatColorUI to open the editor window
 
+**TODO List:**
+1. Add Orange Colors
+2. Add Gray Colors
+3. Add Custom Shader Support
+
+
 **How To**
 
 Choose and export to a Material. Directly in the Unity 3D editor
