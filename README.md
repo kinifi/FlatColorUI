@@ -2,12 +2,13 @@
 
 FlatColorUI is a Library of Flat Colors for Unity3D. 
 
-**Setup: 
+**Setup:**
+
 1. Create an Editor Folder inside your project
 2. Place FlatColorUI.cs in the newly created Editor Folder
 3. Window -> FlatColorUI to open the editor window
 
-**How To
+**How To**
 
 Choose and export to a Material. Directly in the Unity 3D editor
 ![alt text](http://i.imgur.com/FORhSPh.gif "Save Colors to Material")
